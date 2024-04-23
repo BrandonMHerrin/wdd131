@@ -36,9 +36,12 @@ main {
 }
 aside {
     padding: 1rem;
-    background-color: #f4f4f4;
-    color: #333 ;
+    background-color: #444;
+    color: #fff;
     grid-column: 3/4;
+}
+aside image {
+    width: 100%;
 }
 footer {
     grid-column: 1 / 4;

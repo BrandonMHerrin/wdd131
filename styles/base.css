@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto&display=swap');
+
+/* Set color variables */
+:root {
+    --color-primary: #524948;
+    --color-secondary: #57467B;
+    --color-tertiary: #7CB4B8;
+    --color-accent: #D8B4A0;
+    --color-light: #D77A61;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-primary);
+    text-decoration: solid underline var(--color-accent);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-accent);
+    padding: 0.5rem 0;
+}
+
+header nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+header nav a:hover {
+    color: var(--color-light);
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr auto;
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    border: var(--color-primary) 1px solid;
+    margin: 1rem 0;
+    padding: 0;
+    grid-row: span 2;
+    position: relative;
+}
+
+.card h2 {
+    background-color: var(--color-accent);
+    margin: 0;
+    padding: .5rem;
+    color: var(--color-primary);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.flex-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}   
+
+
+.card-content {
+    padding: 1rem;
+    grid-row: span 2;
+}
+
+.left {
+    grid-column: 1 / 2;
+}
+
+.right {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.medium-img {
+    width: 300px;
+    height: auto;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.float-left {
+    float: left;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    text-align: center;
+    padding: 1rem 0;
+}

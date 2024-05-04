@@ -1,0 +1,30 @@
+:root {
+    --color-primary: #04395E;
+    --color-secondary: #04395E;
+    --color-accent: #A8D0DB;
+}
+
+@media screen and (min-width: 562px) {
+    #temple-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #nav-button {
+        display: none;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        display: flex;
+        gap: .5rem;
+        margin: 1rem;
+    }
+    nav a {
+        display: block;
+        height: 1.25rem;
+        background-color: var(--color-primary);
+        color: #fff;
+    }
+}

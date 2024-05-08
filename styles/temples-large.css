@@ -6,21 +6,30 @@
 
 @media screen and (min-width: 562px) {
     #temple-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 862px) {
+    #temple-gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
     #nav-button {
         display: none;
     }
+    
     header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+    
     nav {
         display: flex;
         gap: .5rem;
         margin: 1rem;
     }
+    
     nav a {
         display: block;
         height: 1.25rem;

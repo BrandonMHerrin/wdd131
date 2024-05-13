@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 | Country Assignment</title>
+    <meta name="author" content="Brandon Melvin Herrin">
+    <meta name="description" content="Assignment for WDD131 at BYU-Idaho. This is at
+    webpage about the Philippines showing skills learned this week.">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="./images/place/philippines-large.webp">
+                <img src="./images/place/philippines-small.webp" alt="Filipino motoboats anchored on beautiful tropical beach">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="grid columns-2 gap">
+                <p class="text-right">Continent:</p>
+                <p>Asia</p>
+                <p class="text-right">Capital:</p>
+                <p>Manila</p>
+                <p class="text-right">Official Languages:</p>
+                <p>Filipino | English</p>
+                <p class="text-right">Population:</p>
+                <p>114,163,719</p>
+                <p class="text-right">Currency:</p>
+                <p>Philippine Peso</p>
+                <p class="text-right">Number of Islands:</p>
+                <p>7,641</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="./images/place/cloud_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Cloud icon" class="weather-icon">
+            <div class="grid columns-2 gap">
+                <p class="text-right">Temperature:</p>
+                <p id="temperature"><span id="temp-value">31.7</span> <span id="temp-uom">°C</span></p>
+                <p class="text-right">Conditions:</p>
+                <p id="conditions">Partly Cloudy</p>
+                <p class="text-right">Wind:</p>
+                <p id="wind"><span id="wind-value">8</span> <span id="wind-uom">km/h</span></p>
+                <p class="text-right">Wind Chill:</p>
+                <p id="wind-chill"><span id="windc-value"></span> <span id="windc-uom"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Brandon Herrin | Utah</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

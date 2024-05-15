@@ -1,0 +1,28 @@
+header {
+    text-align: center;
+}
+.grid {
+    display: grid;
+}
+.column-1 {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 400px;
+}
+img {
+    width: 400px;
+    height: 600px;
+    animation: fade 5s;
+}
+footer {
+    text-align: center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

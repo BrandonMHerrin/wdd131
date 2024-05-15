@@ -1,0 +1,31 @@
+table {
+    width: 400px;
+    border-collapse: collapse;
+    caption {
+        caption-side: bottom;
+    }
+    th {
+        padding: .5rem;
+        border-spacing: 0;
+    }
+    th[scope=colgroup] {
+        background-color: black;
+        color: white;
+    }
+    th[scope=col] {
+        background-color: darkgray;
+        color: white;
+    }
+    tbody {
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            text-align: center;
+            border: 1px solid black;
+        }
+    }
+}
+
+

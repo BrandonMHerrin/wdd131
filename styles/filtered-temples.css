@@ -23,6 +23,10 @@ h1 {
 h2 {
     font-size: 2.25rem;
 }
+h3 {
+    font-size: 2rem;
+    margin: 0 0 .5rem 0;
+}
 
 header {
     padding: 0;
@@ -56,6 +60,21 @@ nav a:hover {
 #temple-gallery {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+article {
+    background-color: var(--color-accent);
+    padding: 1.5rem;
+}
+article p {
+    padding: 0;
+    margin: 0;
+}
+article img {
+    box-shadow: 0 .2rem 1rem .25rem rgba(0, 0, 0, 0.6);
+    margin: 1rem 0 0 0;
 }
 
 main img {

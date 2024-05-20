@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 | Temples Picture Album</title>
+    <meta name="author" content="Brandon Melvin Herrin">
+    <meta name="description" content="Temple picture album assignment for WDD131 BYU-I">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" type="module"></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="flex padding">
+            <h1>Temples Album</h1>
+            <button id="nav-button"></button>
+        </div>
+        <nav>
+            <a id="home-button" href="#">Home</a>
+            <a id="old-button" href="#">Old</a>
+            <a id="new-button" href="#">New</a>
+            <a id="large-button" href="#">Large</a>
+            <a id="small-button" href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="temple-category" class="margin"></h2>
+        <section id="temple-gallery">
+        </section>
+    </main>
+    <footer class="padding">
+      <p>&copy; <span id="currentyear"></span> Brandon Herrin | Utah</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

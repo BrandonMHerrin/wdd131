@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Brandon Melvin Herrin">
+    <meta name="description" content="Page for demonstrating good form design.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="centered">Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label>
+                Product Name<span class="required">*</span>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <label>
+                Overal Rating<span class="required">*</span>
+                <div class="star-ratings">
+                    <label>&star;<input type="radio" name="rating" value="1" id="star-1" required></label>
+                    <label>&star;&star;<input type="radio" name="rating" value="2" id="star-2" required></label>
+                    <label>&star;&star;&star;<input type="radio" name="rating" value="3" id="star-3" required></label>
+                    <label>&star;&star;&star;&star;<input type="radio" name="rating" value="4" id="star-4" required></label>
+                    <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="5" id="star-5" required></label>
+                </div>
+            </label>
+            <label>
+                Date of Installation<span class="required">*</span>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </label>
+            <div class="checkbox">
+                <p>
+                    Which features did you find useful in the product?<br>
+                    (Check all that apply)
+                </p>
+                <label><input type="checkbox" name="features" id="chk-durability" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" id="chk-ease" value="ease">Ease of Use</label>
+                <label><input type="checkbox" name="features" id="chk-performance" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" id="chk-design" value="design">Design</label>
+            </div>
+            <label>
+                Written review
+                <textarea id="review" name="review" rows="6"></textarea>
+            </label>
+            <label>
+                User Name
+                <input type="text" id="username" name="username">
+            </label>
+            <input type="submit" id="submit" value="Send Review">
+        </form>
+    </main>
+    <footer class="centered">
+        <p>&copy;<span id="current-year"></span> Brandon Herrin | Utah</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

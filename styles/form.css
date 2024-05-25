@@ -65,6 +65,12 @@ input, select, textarea, .star-ratings {
     justify-items: center; /* if you also want to center them horizontally */
 }
 
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .star-ratings input {
     margin: 0 auto;
 }

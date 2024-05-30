@@ -32,9 +32,11 @@ const products = [
 const main = () => {
     document.querySelector("#current-year").textContent = now.getFullYear();
     document.querySelector("#last-modified").textContent = document.lastModified;
-    if (window.location.pathname === "/form.html")
+    const pathNameArray = window.location.pathname.split("/");
+    const page = pathNameArray[pathNameArray.length - 1];
+    if (page === "form.html")
         loadSelectOptions();
-    else if (window.location.pathname === "/review.html");
+    else if (page === "/review.html");
         handleReviewSubmission();
 }
 

@@ -1,0 +1,17 @@
+@media screen and (min-width: 560px) {
+    header {
+        display: flex;
+        background-color: var(--primary);
+        border-bottom: 8px solid var(--accent);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    header h1 {
+        border-bottom: 0;
+    }
+
+    .div-button-wrapper {
+        display: none;
+    }
+}

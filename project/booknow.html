@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Rock Family Adventures</title>
+    <meta name="author" content="Brandon Melvin Herrin">
+    <meta name="description" content="Red Rock Famil Adventures 
+    offers families hassle free Adventures camping in the great 
+    outdoors of scenic Central Utah.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="scripts/booknow.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h1>Red Rock Family Adventures</h1></a>
+        <div class="div-button-wrapper">
+            <button class="nav-menu-button">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+        </div>
+        <nav class="hide">
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <h2>Book Now</h2>
+            <form method="get" action="./adventure-booked.html">
+                <label>First Name
+                    <input name="fname" id="fname" type="text" required maxlength="50">
+                </label>
+                <label>Last Name
+                    <input name="lname" id="lname" type="text" required maxlength="70">
+                </label>
+                <label>Email
+                    <input name="email" id="email" type="email" required>
+                </label>
+                <label>Pickup Date
+                    <input name="pickup-date" id="pickup-date" type="date" required>
+                </label>
+                <label>Return Date
+                    <input name="return-date" id="return-date" type="date" required>
+                </label>
+                <label>National Park
+                    <select required name="park" id="park">
+                        <option value="">Please Select a Park...</option>
+                        <option value="zion">Zion National Park</option>
+                        <option value="bryce">Bryce Canyon National Park</option>
+                        <option value="arches">Arches National Park</option>
+                        <option value="canyon">Canyon Lands National Park</option>
+                        <option value="capital">Capital Reef National Park</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Desired Services</legend>
+                    <input type="checkbox" name="services" id="delivery"><label for="delivery">Delivery</label>
+                    <input type="checkbox" name="services" id="catering"><label for="catering">Catering</label>
+                    <input type="checkbox" name="services" id="setup"><label for="setup">Camp Setup</label>
+                </fieldset>
+                <input id="submit" type="submit" value="Book Now">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span class="current-year"></span> Brandon M Herrin | Utah</p>
+        <p>Not a Real Company</p>
+    </footer>
+</body>
+</html>

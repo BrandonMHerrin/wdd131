@@ -1,10 +1,12 @@
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 800px) {
     header {
         display: flex;
         background-color: var(--primary);
         border-bottom: 8px solid var(--accent);
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header h1 {
@@ -13,5 +15,23 @@
 
     .div-button-wrapper {
         display: none;
+    }
+
+    header nav.hide {
+        display: flex;
+        background-color: var(--primary);
+        gap: 1rem;
+    }
+
+    header nav a {
+        background-color: var(--secondary);
+        border: none;
+    }
+
+    .picture-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
     }
 }

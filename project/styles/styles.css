@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     color: var(--standard-text);
     font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h2 {
     font-size: 2.5rem;
     border-left: .25rem solid var(--accent);
     padding-left: .5rem;
+    margin-left: .5rem;
 }
 h2 {
     font-size: 2rem;
@@ -82,7 +84,6 @@ nav {
     border-bottom-right-radius: 10px;
 }
 nav a {
-    text-decoration: none;
     color: var(--header-text);
     background-color: var(--primary);
     padding: 1rem;
@@ -90,6 +91,9 @@ nav a {
     border-left: .5rem solid var(--accent);
     border-right: .5rem solid var(--accent);
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 header a {
@@ -110,6 +114,44 @@ footer {
     text-align: center;
 }
 
+form {
+    max-width: 550px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+
+form label, input[type="text"], input[type="date"], select {
+    display: block;
+}
+
+input[type="text"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: var(--secondary);
+    color: var(--header-text);
+    padding: .5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+fieldset label {
+    display: inline;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: .3rem;
+}
+
 .wireframe-img {
     width: 100%;
     height: auto;
@@ -127,10 +169,9 @@ footer {
     background-color: var(--secondary);
 }
 
-.hero {
-    height: 350px;
-    width: 100%;
-    background-color: var(--accent);
+picture img {
+    height: auto;
+    max-width: 100%;
 }
 
 section {
